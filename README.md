@@ -1,0 +1,1 @@
+- Este formulário usa HTML para dar a estrutura, e os estilos com CSS, também se adapta a diferentes tamanhos de tela
