@@ -1,1 +1,1 @@
-- Este formulário usa HTML para dar a estrutura, e os estilos com CSS, também se adapta a diferentes tamanhos de tela
+- Neste formulário utilizo HTML para criar a estrutura, e CSS para os estilos, ele é responsivo e se adapta a diferentes tamanhos de tela
