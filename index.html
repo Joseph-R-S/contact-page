@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="./assets/contact-form-icon.svg" alt="Logo">
+
+    </header>
+    <section class="main">
+        <h1>Interested in our business pricing?</h1>
+        <p>Fill out the form to view details and we’ll contact you as soon as possible.</p>
+    </section>
+
+    <div class="contenedor-form">
+        <form action="" method="post" class="formulario">
+            <div>
+                <label for="name"> Name </label>
+                <input type="text" id="name" placeholder="Ethan Johnson">
+            </div>
+
+            <div>
+                <label for="email"> Company Email </label>
+                <input type="email" name="email" id="email" placeholder="ethan@johnson.com">
+            </div>
+            
+            <div class="custom-select">
+                <label for="size"> Company Size </label>
+                <select name="size" id="size" >
+                    <option value="1">50-100 employees</option>
+                    <option value="2">100-150 employees</option>
+                    <option value="3">150-200 employees</option>
+                </select>
+            </div>
+
+            <div class="custom-select">
+                <label for="subject"> Subject </label>
+                <select name="subject" id="subject">
+                    <option value="">Building Landing pages</option>
+                    <option value="">Building Full-Stack pages</option>
+                    <option value="">Building Databases</option>
+                </select>
+            </div>
+
+            <div id="text-area">
+                <label for="message">Message</label>
+                <textarea name="message" id="" placeholder="50-100 employees"></textarea>
+            </div>
+            <input type="button" class="btn" value="Contact Sales">
+
+        </form>
+    </div>
+
+</body>
+
+</html>

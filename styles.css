@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --blacno: #FFFFFF;
+    --blanco2: #F8FAFC;
+    --gris: #CDD5E0;
+    --oscuro: #111729;
+    --roxo: #4036A9;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+
+body {
+    background-image: url(./assets/bg-image.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Be Vietnam Pro", system-ui;
+    color: var(--blacno);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1280px;
+}
+
+header {
+    height: 90px;
+    padding: 20px 30px;
+    width: 100%;
+    display: flex;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main h1,
+p {
+    width: 320px;
+    text-align: center;
+}
+
+.main h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.main p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.contenedor-form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+   
+}
+
+.formulario {
+    background-color: rgba(64, 54, 169, 0.1);
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 1;
+    position: relative;
+    width: 95%;
+    padding-top: 1rem;
+    border-radius: 15px;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.formulario label {
+    font-size: 14px;
+}
+
+.formulario div {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+}
+
+.formulario input {
+    padding: 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+}
+
+.custom-select {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 1rem;
+    font-family: "Be Vietnam Pro", system-ui;
+}
+
+.custom-select::after {
+    content: "";
+    border: solid black;
+    border-width: 0px 3px 3px 0;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    position: absolute;
+    right: 0;
+    margin-right: 1.5rem;
+    margin-top: 38px;
+}
+
+.custom-select:hover {
+    cursor: pointer;
+}
+
+#text-area {
+    height: 150px;
+    width: 95%;
+}
+
+textarea {
+    font-family: "Be Vietnam Pro", system-ui;
+    padding: 10px;
+    text-align: justify;
+    resize: none;
+    border-radius: 10px;
+    height: 100%;
+}
+
+.btn {
+    width: 95%;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    color: var(--roxo);
+    font-family: "Be Vietnam Pro", system-ui;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (min-width: 640px) {
+    .contenedor-form {
+        width: 90%;
+    }
+    .formulario {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 1rem;
+        height: 500px;
+        width: 100%;
+    }
+
+    .formulario div {
+        width: 49%;
+    }
+
+    #text-area {
+        width: 100%;
+    }
+
+    .btn{
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 1024px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulario{
+        height: 500px;
+    }
+    .contenedor-form {
+        width: 75%;
+    }
+
+   
+}
